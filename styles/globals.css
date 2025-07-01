@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Özel stiller (isteğe bağlı) */
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
