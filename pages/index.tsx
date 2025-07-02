@@ -1,3 +1,5 @@
+import '../styles/globals.css';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#e6f0ea] text-[#1a3c34] flex flex-col items-center justify-center p-4">
