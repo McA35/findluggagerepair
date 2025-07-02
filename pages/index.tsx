@@ -22,16 +22,8 @@ export default function Home() {
       </div>
 
       <div className="mt-10 relative">
-        <img
-          src="/suitcase.png"
-          alt="luggage"
-          className="w-48 h-auto z-10 relative"
-        />
-        <img
-          src="/suitcase-bg.png"
-          alt=""
-          className="w-48 h-auto absolute top-0 left-0 opacity-10"
-        />
+       <img src="/luggage.png" alt="luggage" />
+
       </div>
 
       <footer className="mt-10 text-sm text-center text-[#4a4a4a]">
