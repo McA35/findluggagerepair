@@ -1,34 +1,36 @@
-// Triggering deploy
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#e6f0ea] text-[#1a3c34] flex flex-col items-center justify-center p-4">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
+    <div className="min-h-screen bg-green-100 flex flex-col items-center justify-center text-center p-6">
+      <h1 className="text-4xl font-bold text-green-900 mb-4">
         Find Luggage Repair Near You
       </h1>
-      <p className="text-center max-w-xl mb-6 text-lg">
+      <p className="text-green-800 text-lg mb-6">
         Locate luggage repair shops conveniently close to your area.
       </p>
-      <div className="flex gap-4 flex-wrap justify-center">
-        <button className="bg-[#fefae0] text-[#1a3c34] px-6 py-2 rounded-full shadow hover:bg-[#fceabb] transition">
+      <div className="flex space-x-4 mb-6">
+        <button className="bg-yellow-100 text-green-900 font-medium px-4 py-2 rounded-xl shadow hover:bg-yellow-200">
           New York
         </button>
-        <button className="bg-[#fefae0] text-[#1a3c34] px-6 py-2 rounded-full shadow hover:bg-[#fceabb] transition">
+        <button className="bg-yellow-100 text-green-900 font-medium px-4 py-2 rounded-xl shadow hover:bg-yellow-200">
           Los Angeles
         </button>
-        <button className="bg-[#fefae0] text-[#1a3c34] px-6 py-2 rounded-full shadow hover:bg-[#fceabb] transition">
+        <button className="bg-yellow-100 text-green-900 font-medium px-4 py-2 rounded-xl shadow hover:bg-yellow-200">
           London
         </button>
       </div>
-
-      <div className="mt-10 relative">
-       <img src="/luggage.png" alt="luggage" />
-
-      </div>
-
-      <footer className="mt-10 text-sm text-center text-[#4a4a4a]">
+      <Image
+        src="/luggage-clean.png"
+        alt="Luggage"
+        width={300}
+        height={300}
+        className="rounded-xl shadow"
+      />
+      <footer className="mt-8 text-sm text-green-800">
         © 2025 findluggagerepair.com
       </footer>
     </div>
-  );
+  )
 }
+
