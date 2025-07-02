@@ -1,12 +1,15 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <div className="min-h-screen bg-green-100 flex flex-col items-center justify-center text-center p-6">
-      <h1 className="text-4xl font-bold text-green-900 mb-4">
+    <div
+      className="min-h-screen bg-green-100 bg-center bg-no-repeat bg-contain flex flex-col items-center justify-center text-center p-6"
+      style={{
+        backgroundImage: "url('/luggage-clean.png')",
+      }}
+    >
+      <h1 className="text-4xl font-bold text-green-900 mb-4 bg-white/70 px-4 py-2 rounded-xl">
         Find Luggage Repair Near You
       </h1>
-      <p className="text-green-800 text-lg mb-6">
+      <p className="text-green-800 text-lg mb-6 bg-white/60 px-4 py-2 rounded-xl">
         Locate luggage repair shops conveniently close to your area.
       </p>
       <div className="flex space-x-4 mb-6">
@@ -20,17 +23,11 @@ export default function Home() {
           London
         </button>
       </div>
-      <Image
-        src="/luggage-clean.png"
-        alt="Luggage"
-        width={300}
-        height={300}
-        className="rounded-xl shadow"
-      />
-      <footer className="mt-8 text-sm text-green-800">
+      <footer className="mt-8 text-sm text-green-800 bg-white/60 px-4 py-1 rounded-xl">
         © 2025 findluggagerepair.com
       </footer>
     </div>
   )
 }
+
 
